@@ -1,0 +1,55 @@
+
+.App-main {
+    display: inline-flex;
+    padding-top: 5vmin;
+    height: 8vmin;
+  }
+
+.App-circleArrow {
+    height: 60%;
+    pointer-events: none;
+}
+
+.App-exchangeArrow {
+    padding-right: 2vmin;
+    height: 5vmin;
+    pointer-events: none;
+}
+
+
+.App-invertConvert {
+    height: 5vmin;
+    width: 5vmin;
+}
+ 
+.App-invertConvert button {
+    background-color: white;
+    padding: 10%;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    border: 1px transparent;
+}
+
+.App-invertConvert button:hover {
+    background-color: rgba(255, 255, 255, 0.675);
+    animation: 0.6s rotatefresh 1;
+}
+
+@keyframes rotatefresh {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        transition-duration: 0.6s;
+        transition: 0.6s;
+    }
+}
+
+.App-result {
+    color:white;
+}
+
+

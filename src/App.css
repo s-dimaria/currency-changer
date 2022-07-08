@@ -1,31 +1,23 @@
 .App {
+  min-height: 100vh;
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+  padding: 2%;
+}
+
+.App p {
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +27,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-column {
+  padding-right: 2vmin;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.App-column label {
+  font-size: 2.5vmin;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.App-column input {
+  height: 100%;
+}
+
+.App-column select {
+  height: 100%;
+}
+
+.App-column span {
+  color: green;
+  font-weight: bold;
+}
+
+.App-column button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.App-column button:hover {
+  background-color: #3e8e41;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-result {
+  display: inline-flex;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 2vmin;
+}
+
+.column {
+  padding-right: 2vmin;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

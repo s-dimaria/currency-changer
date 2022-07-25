@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import {ReactComponent as InvertArrow} from '../circle arrow.svg';
 
 
-
 function AmountValue({value, onChange}) {
 
     return(
@@ -51,14 +50,6 @@ function TypeValue({label, symbols, value, onChange}) {
 }
 
 function fetchSymbols() {
-    // var myHeaders = new Headers();
-    // myHeaders.append("apikey", "DjpW3i9ONv515vagpdPiT6XZf39hSfXX");
-
-    // var requestOptions = {
-    // method: 'GET',
-    // headers: myHeaders,
-    // redirect: 'follow'
-    // };
 
     return fetch("https://api.exchangerate.host/symbols")
     .then(response => response.json())
@@ -66,14 +57,6 @@ function fetchSymbols() {
 }
 
 function getConvertResult(amount, from, to) {
-    // var myHeaders = new Headers();
-    // myHeaders.append("apikey", "DjpW3i9ONv515vagpdPiT6XZf39hSfXX");
-
-    // var requestOptions = {
-    // method: 'GET',
-    // headers: myHeaders,
-    // redirect: 'follow'
-    // };
 
     return fetch("https://api.exchangerate.host/convert?amount=" 
         + amount 
